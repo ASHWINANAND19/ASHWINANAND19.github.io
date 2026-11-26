@@ -8,7 +8,7 @@
   <meta name="author" content="Ashwin Anand">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ashwin Anand · Software Engineer">
-  <meta property="og:description" content="I build products end to end: CircleChess, NammaTickets, Legal RAG and more.">
+  <meta property="og:description" content="I build products end to end: CircleChess, Aatmatrisha, Legal RAG and more.">
   <meta property="og:url" content="https://ashwinanand19.github.io/">
   <meta property="og:image" content="https://ashwinanand19.github.io/og.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -154,7 +154,7 @@
             <span class="tag">5 repos</span>
           </div>
           <div class="job__body">
-            <h3>CircleChess <span class="job__role">Software Engineering Intern</span></h3>
+            <h3>CircleChess <span class="job__role">Web Dev Intern</span></h3>
             <p class="job__lede">An online chess school. I owned the Study workspace and the coach workbooks loop, from the app down to the infrastructure.</p>
             <ul class="ticks">
               <li>Rebuilt Study (lessons, practice vs Stockfish, analysis) and built coach assignments, attempt replay and pass-rate analytics across React Native Web, Django and PostgreSQL.</li>
@@ -173,8 +173,8 @@
             <h3>Aatmatrisha '26 <span class="job__role">Web Developer, Tech Team</span></h3>
             <p class="job__lede">The ticketing platform for PES University's annual fest, built by a 12-person student team.</p>
             <ul class="ticks">
-              <li>Built the ticket-buying flow (events, cart, checkout, My Tickets) with order cancellation kept in sync with the cart.</li>
-              <li>Added admin order verification and a global ordering switch enforced at checkout.</li>
+              <li>Built the full frontend: events, passes, cart, checkout, My Tickets, team and admin pages.</li>
+              <li>Added order cancellation synced with the cart, admin order verification, and a global ordering switch enforced at checkout.</li>
             </ul>
             <ul class="chips"><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Tailwind</li></ul>
           </div>
@@ -205,42 +205,37 @@
       </header>
 
       <div class="bento">
-        <article class="card card--wide spot reveal" data-anim="flow">
+        <article class="card card--wide spot reveal" data-anim="bars">
           <div class="card__text">
-            <p class="card__tag mono">Solo · 2026</p>
-            <h3>NammaTickets</h3>
-            <p>A peer-to-peer ticket resale marketplace for Bangalore: verified users, real-time chat, a reservation state machine and dispute tools.</p>
-            <ul class="stats mono"><li><b>200+</b> tests</li><li><b>23/24</b> audit fixes</li><li><b>18</b> data models</li></ul>
-            <ul class="chips"><li>Next.js 16</li><li>PostgreSQL</li><li>Prisma</li><li>Ably</li></ul>
-            <p class="card__links"><span class="muted">Private repo · walkthrough on request</span></p>
+            <p class="card__tag mono">Research · team of 3 · 2026</p>
+            <h3>Legal RAG</h3>
+            <p>Which way of splitting and searching India's new criminal codes finds the right law? We benchmarked 20 chunkers × 7 retrievers; hybrid BM25 + BGE-M3 found the right section 81.1% of the time.</p>
+            <ul class="stats mono"><li><b>140</b> setups tested</li><li><b>81.1%</b> hit rate</li><li><b>IEEE</b> paper</li></ul>
+            <ul class="chips"><li>Python</li><li>BM25</li><li>BGE-M3</li><li>FAISS</li><li>Qwen3</li></ul>
+            <p class="card__links"><a href="https://github.com/ASHWINANAND19/legal-rag-chunking" target="_blank" rel="noopener">Code ↗</a></p>
           </div>
           <div class="card__visual" aria-hidden="true">
-            <div class="flow">
-              <p class="mono flow__title">reservation lifecycle</p>
-              <div class="flow__row">
-                <span class="state" data-step="0">LISTED</span><i class="arrow"></i>
-                <span class="state" data-step="1">OFFER</span><i class="arrow"></i>
-                <span class="state" data-step="2">RESERVED</span>
-              </div>
-              <div class="flow__split">
-                <span class="state state--good" data-step="3">COMPLETED</span>
-                <span class="state state--warn">DISPUTED</span>
-                <span class="state state--dim">CANCELLED</span>
-              </div>
+            <div class="bars">
+              <div class="bars__row"><span class="mono">no RAG</span><span class="bar"><i style="--w:5.7%"></i></span><span class="mono">5.7%</span></div>
+              <div class="bars__row"><span class="mono">with RAG</span><span class="bar bar--on"><i style="--w:58.6%"></i></span><span class="mono">58.6%</span></div>
+              <p class="mono bars__note">citation F1 · Qwen3-4B</p>
             </div>
           </div>
         </article>
 
-        <article class="card spot reveal" data-anim="bars">
-          <p class="card__tag mono">Research · team of 3</p>
-          <h3>Legal RAG</h3>
-          <p>20 chunkers × 7 retrievers on India's new criminal codes. Hybrid retrieval found the right section 81.1% of the time.</p>
-          <div class="bars" aria-hidden="true">
-            <div class="bars__row"><span class="mono">no RAG</span><span class="bar"><i style="--w:5.7%"></i></span><span class="mono">5.7%</span></div>
-            <div class="bars__row"><span class="mono">with RAG</span><span class="bar bar--on"><i style="--w:58.6%"></i></span><span class="mono">58.6%</span></div>
-            <p class="mono bars__note">citation F1 · Qwen3-4B</p>
+        <article class="card spot reveal">
+          <p class="card__tag mono">Personal project · in progress</p>
+          <h3>NammaTickets</h3>
+          <p>A safer way to resell event tickets in Bangalore, built on my own.</p>
+          <div class="ticket" aria-hidden="true">
+            <div class="ticket__main">
+              <span>Admit one · resale</span>
+              <b>NammaTickets</b>
+              <span class="ticket__status"><i class="dot dot--ink"></i>Building</span>
+            </div>
+            <div class="ticket__stub mono"><span>No. 001</span></div>
           </div>
-          <p class="card__links"><a href="https://github.com/ASHWINANAND19/legal-rag-chunking" target="_blank" rel="noopener">Code ↗</a></p>
+          <ul class="chips"><li>Next.js</li><li>PostgreSQL</li><li>Prisma</li></ul>
         </article>
 
         <article class="card spot reveal" data-anim="score">
@@ -301,8 +296,8 @@
           <p class="tile__label">repos I shipped to at CircleChess: app, API, schema, engine, infra</p>
         </div>
         <div class="tile spot reveal">
-          <p class="tile__value" data-count="200" data-suffix="+">200+</p>
-          <p class="tile__label">tests on NammaTickets, run against real PostgreSQL on every PR</p>
+          <p class="tile__value" data-count="140">140</p>
+          <p class="tile__label">retrieval setups benchmarked in my Legal RAG study</p>
         </div>
         <div class="tile spot reveal">
           <p class="tile__value" data-count="58.6" data-from="5.7" data-decimals="1" data-suffix="%">58.6%</p>
