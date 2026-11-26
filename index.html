@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashwin Anand · Software Engineer</title>
+  <meta name="description" content="Ashwin Anand: software engineer and CSE (AI & ML) undergrad at PES University, Bangalore. Full-stack work across React, Django, FastAPI, Next.js, PostgreSQL and AWS.">
+  <meta name="author" content="Ashwin Anand">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ashwin Anand · Software Engineer">
+  <meta property="og:description" content="Full-stack engineer and AI undergrad at PES University. CircleChess, NammaTickets, Legal RAG and more.">
+  <meta property="og:url" content="https://ashwinanand19.github.io/">
+  <meta property="og:image" content="https://ashwinanand19.github.io/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://ashwinanand19.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e100f" media="(prefers-color-scheme: dark)">
+  <script>
+    // Apply the saved theme before first paint, and mark JS as available.
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="Ashwin Anand, back to top">
+        <span class="brand__mark" aria-hidden="true">AA</span>
+        <span class="brand__name">Ashwin Anand</span>
+      </a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--small" href="Ashwin_Anand_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero wrap">
+      <div class="hero__text">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Open to 2027 internships · Bangalore</p>
+        <h1 class="hero__title">I build software <em>end to end</em>: schema, API, interface, and the tests that hold it together.</h1>
+        <p class="hero__lede">
+          I'm Ashwin, a Computer Science (AI&nbsp;&amp;&nbsp;ML) student at PES University.
+          This summer I built a coach-and-student study platform at <strong>CircleChess</strong> across
+          React Native, Django, PostgreSQL and AWS. On the side I build my own products, like
+          <strong>NammaTickets</strong>, a ticket resale marketplace.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="Ashwin_Anand_Resume.pdf" target="_blank" rel="noopener">
+            Download resume
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
+          </a>
+          <a class="btn" href="https://github.com/ASHWINANAND19" target="_blank" rel="noopener">
+            GitHub
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="mailto:ashwin.a.anand@gmail.com">ashwin.a.anand@gmail.com</a>
+        </div>
+      </div>
+
+      <figure class="hero__board" aria-label="A chessboard playing the first moves of the Italian Game">
+        <div class="board-card">
+          <div class="board-card__head">
+            <span class="mono">Italian Game</span>
+            <span class="mono board-card__live"><span class="status-dot" aria-hidden="true"></span>live</span>
+          </div>
+          <div class="board" id="board">
+            <div class="board__hl" id="hl-from"></div>
+            <div class="board__hl" id="hl-to"></div>
+          </div>
+          <ol class="moves mono" id="moves" aria-hidden="true">
+            <li><span>1.</span><b data-ply="0">e4</b><b data-ply="1">e5</b></li>
+            <li><span>2.</span><b data-ply="2">Nf3</b><b data-ply="3">Nc6</b></li>
+            <li><span>3.</span><b data-ply="4">Bc4</b><b data-ply="5">Bc5</b></li>
+          </ol>
+        </div>
+        <figcaption>Chess is how I ended up building for CircleChess.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ================= NUMBERS ================= -->
+    <section class="wrap numbers reveal" aria-label="Highlights">
+      <div class="number">
+        <p class="number__value">5 repos</p>
+        <p class="number__label">app, API, schema, engine and infrastructure, all in one CircleChess summer</p>
+      </div>
+      <div class="number">
+        <p class="number__value">200+</p>
+        <p class="number__label">tests on NammaTickets, run on every PR against a real PostgreSQL</p>
+      </div>
+      <div class="number">
+        <p class="number__value">5.7% <span aria-hidden="true">→</span><span class="sr-only">to</span> 58.6%</p>
+        <p class="number__label">citation F1 once retrieval was added, in my Legal RAG study</p>
+      </div>
+      <div class="number">
+        <p class="number__value">6.6k <span aria-hidden="true">→</span><span class="sr-only">to</span> 3.6k</p>
+        <p class="number__label">lines in one React screen after a staged refactor, backed by 99 tests</p>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section wrap" id="work" aria-labelledby="work-title">
+      <div class="section__head reveal">
+        <p class="kicker mono">01 · Experience</p>
+        <h2 id="work-title">Where I've worked</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="job reveal">
+          <div class="job__meta">
+            <p class="mono job__date">Jun – Aug 2026</p>
+            <p class="job__place">Bangalore</p>
+          </div>
+          <div class="job__body">
+            <h3>Software Engineering Intern <span class="at">at</span> CircleChess</h3>
+            <p class="job__intro">CircleChess is an online chess school. I worked on its Study workspace and the coach workbooks loop, across the app, the API, the database and the infrastructure.</p>
+            <ul class="bullets">
+              <li>Rebuilt the <strong>Study workspace</strong>, an interactive chess study tool with lesson, practice-vs-Stockfish and analysis modes, across the React Native Web app, Django REST backend and PostgreSQL schema.</li>
+              <li>Built the <strong>coach workbooks</strong> loop end to end: assignment APIs scoped as a coach–student privacy boundary, attempt recording and replay, pass-rate and drop-off analytics, and a coach dashboard.</li>
+              <li>Self-hosted Lichess's open-source <strong>opening explorer and endgame tablebase</strong> on AWS ECS (Fargate Spot) with Pulumi and Bitbucket Pipelines, then halved their CPU and memory.</li>
+              <li>Added a shared <strong>Stockfish evaluation cache</strong> keyed by board position, so games that reach the same position reuse analysis; swapped queue polling for blocking Redis reads.</li>
+              <li>Split a 6,600-line screen into hooks and components (3,650 lines) in staged commits backed by 99 unit tests, keeping a compatibility endpoint for app builds already in production.</li>
+            </ul>
+            <ul class="chips" aria-label="Stack">
+              <li>React Native Web</li><li>TypeScript</li><li>Django</li><li>PostgreSQL</li><li>Redis</li><li>AWS ECS</li><li>Pulumi</li><li>Stockfish</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job__meta">
+            <p class="mono job__date">Feb – Mar 2026</p>
+            <p class="job__place">PES University</p>
+          </div>
+          <div class="job__body">
+            <h3>Web Developer, Tech Team <span class="at">at</span> Aatmatrisha '26</h3>
+            <p class="job__intro">The ticketing platform for PES University's annual cultural and technical fest, built by a 12-person student team.</p>
+            <ul class="bullets">
+              <li>Built the ticket-buying flow (events, cart, checkout and My Tickets), including order cancellation and ticket-level removal kept in sync with the cart.</li>
+              <li>Added an admin order-verification view showing buyer details, per-event prices and participant SRNs, plus a global ordering switch enforced at checkout.</li>
+              <li>Second-highest committer on the team.</li>
+            </ul>
+            <ul class="chips" aria-label="Stack">
+              <li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li><li>Tailwind CSS</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job__meta">
+            <p class="mono job__date">Feb – May 2025</p>
+            <p class="job__place">Bangalore</p>
+          </div>
+          <div class="job__body">
+            <h3>Software Development Intern <span class="at">at</span> Liquid Neurons</h3>
+            <p class="job__intro">A school ERP serving several institutes: admissions, fees, staff and attendance.</p>
+            <ul class="bullets">
+              <li>Built the <strong>fee-receipt</strong> and <strong>employee-onboarding</strong> modules: React forms backed by Flask REST endpoints and MySQL queries for fee collection, fee search and staff records.</li>
+              <li>Fixed bugs across the admissions and fee flows as part of a 5-person engineering team.</li>
+            </ul>
+            <ul class="chips" aria-label="Stack">
+              <li>React</li><li>JavaScript</li><li>Flask</li><li>Python</li><li>MySQL</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section wrap" id="projects" aria-labelledby="projects-title">
+      <div class="section__head reveal">
+        <p class="kicker mono">02 · Projects</p>
+        <h2 id="projects-title">Things I've built</h2>
+      </div>
+
+      <div class="bento">
+
+        <!-- NammaTickets -->
+        <article class="card card--wide reveal">
+          <div class="card__text">
+            <p class="card__tag mono">Solo · 2026</p>
+            <h3>NammaTickets</h3>
+            <p>A peer-to-peer ticket resale marketplace for Bangalore, built to replace WhatsApp-group resale with verified identities, reputation and dispute handling.</p>
+            <ul class="bullets bullets--tight">
+              <li>Listings, offers, a reservation state machine, real-time buyer–seller chat, ratings with a trust score, and admin tools with an append-only audit log.</li>
+              <li>Database sessions instead of JWTs so a ban applies on the very next request; atomic trust-score and offer writes to stop lost updates.</li>
+              <li>200+ unit and integration tests in GitHub Actions against a real PostgreSQL. A self-review logged 24 findings, and 23 are fixed.</li>
+            </ul>
+            <ul class="chips" aria-label="Stack">
+              <li>Next.js 16</li><li>TypeScript</li><li>PostgreSQL</li><li>Prisma</li><li>Auth.js</li><li>Ably</li><li>Vitest</li>
+            </ul>
+            <p class="card__links"><span class="muted">Private repo. Happy to walk through the code.</span></p>
+          </div>
+          <div class="card__visual" aria-hidden="true">
+            <div class="flow">
+              <p class="flow__title mono">reservation lifecycle</p>
+              <div class="flow__row">
+                <span class="state">LISTED</span><span class="arrow"></span>
+                <span class="state">OFFER</span><span class="arrow"></span>
+                <span class="state state--on">RESERVED</span>
+              </div>
+              <div class="flow__split">
+                <span class="state state--good">COMPLETED</span>
+                <span class="state state--warn">DISPUTED</span>
+                <span class="state state--dim">CANCELLED</span>
+              </div>
+              <div class="flow__facts mono">
+                <span>18 models</span><span>200+ tests</span><span>23/24 fixed</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Legal RAG -->
+        <article class="card reveal">
+          <p class="card__tag mono">Research · team of 3 · 2026</p>
+          <h3>Legal RAG on India's new criminal codes</h3>
+          <p>20 chunking strategies × 7 retrievers on the BNS, BNSS and BSA at an equal context budget. Hybrid BM25 + BGE-M3 found the right section for 81.1% of questions. Written up as an IEEE-format paper.</p>
+          <div class="bars" aria-hidden="true">
+            <div class="bars__row"><span class="mono">closed-book</span><span class="bar"><i style="--w:5.7%"></i></span><span class="mono">5.7%</span></div>
+            <div class="bars__row"><span class="mono">with RAG</span><span class="bar bar--on"><i style="--w:58.6%"></i></span><span class="mono">58.6%</span></div>
+            <p class="bars__note mono">section-citation F1 · Qwen3-4B</p>
+          </div>
+          <ul class="chips" aria-label="Stack"><li>Python</li><li>BM25</li><li>BGE-M3</li><li>FAISS</li><li>Streamlit</li></ul>
+          <p class="card__links"><a href="https://github.com/ASHWINANAND19/legal-rag-chunking" target="_blank" rel="noopener">Code ↗</a></p>
+        </article>
+
+        <!-- Scoreboard -->
+        <article class="card reveal">
+          <p class="card__tag mono">Full stack · 2025</p>
+          <h3>Live Sports Scoreboard</h3>
+          <p>A tournament app for basketball, table tennis, carrom, pool and snooker, with fixtures, leaderboards and a WebSocket scoreboard that updates live. 40 JWT-secured REST endpoints.</p>
+          <div class="score" aria-hidden="true">
+            <div class="score__team"><span class="mono">HOME</span><b>21</b></div>
+            <div class="score__mid mono"><span class="status-dot"></span>Q4 · 02:14</div>
+            <div class="score__team"><span class="mono">AWAY</span><b>18</b></div>
+          </div>
+          <ul class="chips" aria-label="Stack"><li>React</li><li>FastAPI</li><li>MySQL</li><li>WebSockets</li></ul>
+          <p class="card__links">
+            <a href="https://basketball-scoring-app.vercel.app" target="_blank" rel="noopener">Live ↗</a>
+            <a href="https://github.com/ASHWINANAND19/BASKETBALL_SCORING_APP" target="_blank" rel="noopener">Code ↗</a>
+          </p>
+        </article>
+
+        <!-- ReqTrace -->
+        <article class="card reveal">
+          <p class="card__tag mono">AI agents · team of 4 · 2026</p>
+          <h3>ReqTrace</h3>
+          <p>Turns raw requirements into an IEEE 830 SRS, then generates test cases, a test plan, UML diagrams and a requirement-to-test traceability matrix, with a human approving every AI output. I was Scrum Master and built the UML and test-case agents.</p>
+          <div class="pipe mono" aria-hidden="true">
+            <span>requirements</span><i></i><span>SRS</span><i></i><span>tests</span><i></i><span class="on">trace</span>
+          </div>
+          <ul class="chips" aria-label="Stack"><li>FastAPI</li><li>React</li><li>PostgreSQL</li><li>Gemini</li><li>Docker</li><li>Kubernetes</li></ul>
+          <p class="card__links"><a href="https://github.com/ASHWINANAND19/reqtrace" target="_blank" rel="noopener">Code ↗</a></p>
+        </article>
+
+        <!-- PES-VCS -->
+        <article class="card reveal">
+          <p class="card__tag mono">Systems · 2026</p>
+          <h3>PES-VCS</h3>
+          <p>A Git-style version control system written in C: a SHA-256 content-addressed object store with crash-safe writes (temp file, fsync, rename), a staging index, tree objects and commit history.</p>
+          <pre class="term mono" aria-hidden="true"><span class="p">$</span> ./pes add src/
+<span class="p">$</span> ./pes commit -m "Initial commit"
+<span class="p">$</span> ./pes log
+<span class="c">commit 9f2c41e…</span>
+Author: Ashwin Anand</pre>
+          <ul class="chips" aria-label="Stack"><li>C</li><li>OpenSSL</li><li>Make</li></ul>
+          <p class="card__links"><a href="https://github.com/ASHWINANAND19/PES1UG24AM057-pes-vcs" target="_blank" rel="noopener">Code ↗</a></p>
+        </article>
+
+      </div>
+
+      <div class="more reveal">
+        <h3 class="more__title">More on GitHub</h3>
+        <ul class="more__list">
+          <li>
+            <a href="https://github.com/ASHWINANAND19/pathsnap" target="_blank" rel="noopener"><b>PathSnap</b> ↗</a>
+            <span>Matches noisy GPS traces to roads with a candidate classifier and HMM/Viterbi decoding. FastAPI and Streamlit.</span>
+          </li>
+          <li>
+            <a href="https://github.com/ASHWINANAND19/gymflow" target="_blank" rel="noopener"><b>GymFlow</b> ↗</a>
+            <span>A gym tracker on PostgreSQL and MongoDB. I built the MongoDB model, validators and aggregation pipelines.</span>
+          </li>
+          <li>
+            <a href="https://github.com/ASHWINANAND19/yield-curve-prediction" target="_blank" rel="noopener"><b>Yield curve prediction</b> ↗</a>
+            <span>Five ML frameworks against a naive forecast for US Treasury yields, checked with Diebold–Mariano tests.</span>
+          </li>
+          <li>
+            <a href="https://github.com/ASHWINANAND19/sdn-delay-measurement" target="_blank" rel="noopener"><b>SDN delay measurement</b> ↗</a>
+            <span>RTT and jitter across paths in a Mininet network run by a Ryu OpenFlow controller.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section wrap" id="skills" aria-labelledby="skills-title">
+      <div class="section__head reveal">
+        <p class="kicker mono">03 · Skills</p>
+        <h2 id="skills-title">What I work with</h2>
+      </div>
+      <div class="skills reveal">
+        <div class="skill">
+          <h3 class="mono">Languages</h3>
+          <ul class="chips"><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li><li>C</li><li>Java</li></ul>
+        </div>
+        <div class="skill">
+          <h3 class="mono">Frontend</h3>
+          <ul class="chips"><li>React</li><li>React Native (Web)</li><li>Next.js</li><li>Tailwind CSS</li><li>HTML / CSS</li></ul>
+        </div>
+        <div class="skill">
+          <h3 class="mono">Backend</h3>
+          <ul class="chips"><li>Django</li><li>FastAPI</li><li>Flask</li><li>Node.js</li><li>REST APIs</li><li>WebSockets</li><li>Prisma</li></ul>
+        </div>
+        <div class="skill">
+          <h3 class="mono">Data</h3>
+          <ul class="chips"><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Redis</li><li>Supabase</li></ul>
+        </div>
+        <div class="skill">
+          <h3 class="mono">Cloud &amp; DevOps</h3>
+          <ul class="chips"><li>AWS (ECS, S3)</li><li>Pulumi</li><li>Docker</li><li>Kubernetes</li><li>GitHub Actions</li><li>Vercel</li><li>Git</li></ul>
+        </div>
+        <div class="skill">
+          <h3 class="mono">Testing</h3>
+          <ul class="chips"><li>Vitest</li><li>Jest</li><li>pytest</li><li>Hypothesis</li></ul>
+        </div>
+        <div class="skill skill--wide">
+          <h3 class="mono">AI / ML</h3>
+          <ul class="chips"><li>scikit-learn</li><li>XGBoost</li><li>PyTorch</li><li>RAG (BM25, FAISS, embeddings)</li><li>LLM APIs</li><li>Optuna</li></ul>
+        </div>
+      </div>
+
+      <div class="edu reveal">
+        <div>
+          <p class="kicker mono">Education</p>
+          <h3>PES University, Bangalore</h3>
+          <p>B.Tech, Computer Science and Engineering (AI &amp; ML) · 2024 – 2028</p>
+        </div>
+        <p class="edu__gpa"><span class="mono">CGPA</span><b>8.3</b></p>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+      <div class="reveal">
+        <p class="kicker mono">04 · Contact</p>
+        <h2 id="contact-title" class="contact__title">Let's build <em>something.</em></h2>
+        <p class="contact__lede">The quickest way to reach me is email.</p>
+        <div class="contact__row">
+          <a class="btn btn--primary btn--big" href="mailto:ashwin.a.anand@gmail.com">ashwin.a.anand@gmail.com</a>
+          <button class="btn btn--big copy" type="button" data-copy="ashwin.a.anand@gmail.com">Copy email</button>
+          <a class="btn btn--big" href="https://github.com/ASHWINANAND19" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <p>© <span id="year">2026</span> Ashwin Anand</p>
+    <p class="muted">Hand-written HTML and CSS, hosted on GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
