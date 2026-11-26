@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ashwin Anand · Software Engineer</title>
-  <meta name="description" content="Ashwin Anand: software engineer and CSE (AI & ML) student at PES University, Bangalore. Full-stack work at CircleChess, NammaTickets and more.">
+  <title>Ashwin Anand · Full-stack web developer</title>
+  <meta name="description" content="Ashwin Anand: full-stack web developer and CSE (AI & ML) student at PES University, Bangalore. CircleChess, Aatmatrisha '26, Liquid Neurons, Legal RAG and more.">
   <meta name="author" content="Ashwin Anand">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Ashwin Anand · Software Engineer">
-  <meta property="og:description" content="I build products end to end: CircleChess, Aatmatrisha, Legal RAG and more.">
+  <meta property="og:title" content="Ashwin Anand · Full-stack web developer">
+  <meta property="og:description" content="I build web products end to end: CircleChess, Aatmatrisha '26, Legal RAG and more.">
   <meta property="og:url" content="https://ashwinanand19.github.io/">
   <meta property="og:image" content="https://ashwinanand19.github.io/og.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://ashwinanand19.github.io/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#f4f2ec" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0b0c0b" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#0a0b0a" media="(prefers-color-scheme: dark)">
   <script>
     (function () {
       var d = document.documentElement;
@@ -35,160 +35,228 @@
   <a class="skip" href="#main">Skip to content</a>
   <div class="progress" aria-hidden="true"></div>
 
-  <!-- ============ NAV ============ -->
-  <header class="nav" id="top">
-    <div class="wrap nav__inner">
-      <a class="brand" href="#top" aria-label="Ashwin Anand, back to top">
-        <span class="brand__mark" aria-hidden="true">AA</span>
-      </a>
-      <nav class="nav__links" aria-label="Sections">
-        <a href="#work">Work</a>
-        <a href="#projects">Projects</a>
-        <a href="#numbers">Numbers</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="nav__actions">
-        <button class="kbd-btn" type="button" data-open-palette aria-label="Open quick menu">
-          <span class="kbd-btn__full"><kbd>⌘</kbd><kbd>K</kbd></span>
-          <svg class="kbd-btn__menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
-        </button>
-        <button class="icon-btn theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
-          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
-        </button>
-        <a class="btn btn--small btn--ink" href="Ashwin_Anand_Resume.pdf" target="_blank" rel="noopener">Resume</a>
-      </div>
-    </div>
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar wrap" id="top">
+    <a class="brand" href="#top" aria-label="Ashwin Anand, back to top">
+      <span class="brand__mark" aria-hidden="true">AA</span>
+      <span class="brand__name">Ashwin Anand</span>
+    </a>
+    <span class="pill pill--status"><span class="dot" aria-hidden="true"></span>Open to 2027 internships</span>
+    <a class="btn btn--small btn--ink" href="Ashwin_Anand_Resume.pdf" target="_blank" rel="noopener">Resume</a>
   </header>
+
+  <!-- ================= FLOATING DOCK ================= -->
+  <nav class="dock" aria-label="Sections">
+    <a href="#work" class="dock__item" data-label="Experience" aria-label="Experience">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg>
+    </a>
+    <a href="#projects" class="dock__item" data-label="Projects" aria-label="Projects">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    </a>
+    <a href="#skills" class="dock__item" data-label="Skills" aria-label="Skills">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 5l-3 14"/></svg>
+    </a>
+    <a href="#about" class="dock__item" data-label="About" aria-label="About">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+    </a>
+    <a href="#contact" class="dock__item" data-label="Contact" aria-label="Contact">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+    </a>
+    <span class="dock__sep" aria-hidden="true"></span>
+    <button type="button" class="dock__item dock__item--cmd" data-open-palette data-label="Quick menu ⌘K" aria-label="Open quick menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3z"/></svg>
+    </button>
+    <button type="button" class="dock__item theme-toggle" data-label="Theme" aria-label="Switch colour theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+    </button>
+  </nav>
 
   <main id="main">
 
-    <!-- ============ HERO ============ -->
+    <!-- ================= HERO BENTO ================= -->
     <section class="hero" aria-labelledby="hero-name">
-      <div class="hero__bg" aria-hidden="true"></div>
-      <div class="wrap">
-        <div class="hero__status">
-          <span class="pill"><span class="dot" aria-hidden="true"></span>Available for 2027 internships</span>
-          <span class="pill pill--quiet mono">Bangalore · <time id="clock">IST</time></span>
-        </div>
+      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="hero__grid wrap">
 
-        <h1 class="name" id="hero-name" aria-label="Ashwin Anand">
-          <span class="name__first" aria-hidden="true"><span class="ch" style="--i:0">A</span><span class="ch" style="--i:1">s</span><span class="ch" style="--i:2">h</span><span class="ch" style="--i:3">w</span><span class="ch" style="--i:4">i</span><span class="ch" style="--i:5">n</span></span>
-          <span class="name__last" aria-hidden="true"><span class="ch" style="--i:7">A</span><span class="ch" style="--i:8">n</span><span class="ch" style="--i:9">a</span><span class="ch" style="--i:10">n</span><span class="ch" style="--i:11">d</span></span>
-        </h1>
+        <article class="tile tile--intro spot">
+          <p class="eyebrow mono">Full-stack web developer · CSE (AI &amp; ML), PES University</p>
+          <h1 class="name" id="hero-name" aria-label="Ashwin Anand">
+            <span class="name__first" aria-hidden="true"><span class="ch" style="--i:0">A</span><span class="ch" style="--i:1">s</span><span class="ch" style="--i:2">h</span><span class="ch" style="--i:3">w</span><span class="ch" style="--i:4">i</span><span class="ch" style="--i:5">n</span></span>
+            <span class="name__last" aria-hidden="true"><span class="ch" style="--i:7">A</span><span class="ch" style="--i:8">n</span><span class="ch" style="--i:9">a</span><span class="ch" style="--i:10">n</span><span class="ch" style="--i:11">d</span></span>
+          </h1>
+          <p class="tagline">
+            I build web products end to end: a study platform at
+            <a class="chip chip--link" href="#work"><span class="chip__icon" aria-hidden="true">♞&#xFE0E;</span>CircleChess</a>,
+            the ticketing frontend for
+            <a class="chip chip--link" href="#work"><span class="chip__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9a2 2 0 0 0 0 4v4h18v-4a2 2 0 0 1 0-4V5H3z"/></svg></span>Aatmatrisha '26</a>,
+            and research on
+            <a class="chip chip--link" href="#projects"><span class="chip__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 8h14M5 8l-3 6a3 3 0 0 0 6 0zM19 8l-3 6a3 3 0 0 0 6 0z"/></svg></span>legal RAG</a>.
+          </p>
+          <div class="cta">
+            <a class="btn btn--primary magnetic" href="Ashwin_Anand_Resume.pdf" target="_blank" rel="noopener">
+              Download resume
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
+            </a>
+            <a class="btn magnetic" href="https://github.com/ASHWINANAND19" target="_blank" rel="noopener">
+              GitHub
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+            <button class="btn btn--ghost copy" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+              <span class="copy__label">Copy email</span>
+            </button>
+          </div>
+        </article>
 
-        <div class="hero__grid">
-          <div class="hero__copy">
-            <p class="role mono">Software engineer · CSE (AI &amp; ML), PES University</p>
-            <p class="tagline">
-              I build products end to end: this summer at
-              <a class="chip chip--link" href="#work"><span class="chip__icon" aria-hidden="true">♞&#xFE0E;</span>CircleChess</a>,
-              on my own with
-              <a class="chip chip--link" href="#projects"><span class="chip__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 0 0 4v4h18v-4a2 2 0 0 1 0-4V4H3z" transform="translate(0 2)"/><path d="M14 6v12" stroke-dasharray="2 2"/></svg></span>NammaTickets</a>,
-              and in research on
-              <a class="chip chip--link" href="#projects"><span class="chip__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 8h14M5 8l-3 6a3 3 0 0 0 6 0zM19 8l-3 6a3 3 0 0 0 6 0z"/></svg></span>legal RAG</a>.
-            </p>
-            <div class="cta">
-              <a class="btn btn--primary magnetic" href="Ashwin_Anand_Resume.pdf" target="_blank" rel="noopener">
-                Download resume
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
-              </a>
-              <a class="btn magnetic" href="https://github.com/ASHWINANAND19" target="_blank" rel="noopener">
-                GitHub
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
-              </a>
-              <button class="btn btn--ghost copy" type="button" data-copy="ashwin.a.anand@gmail.com">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
-                <span class="copy__label">Copy email</span>
-              </button>
+        <article class="tile tile--board" aria-label="A chessboard playing the first moves of the Italian Game">
+          <div class="board-card" id="board-card">
+            <div class="board-card__glare" aria-hidden="true"></div>
+            <div class="tile__head mono">
+              <span>Italian Game</span>
+              <span class="live"><span class="dot" aria-hidden="true"></span>live</span>
+            </div>
+            <div class="board" id="board">
+              <div class="board__hl" id="hl-from"></div>
+              <div class="board__hl" id="hl-to"></div>
+            </div>
+            <ol class="moves mono" aria-hidden="true">
+              <li><span>1.</span><b data-ply="0">e4</b><b data-ply="1">e5</b></li>
+              <li><span>2.</span><b data-ply="2">Nf3</b><b data-ply="3">Nc6</b></li>
+              <li><span>3.</span><b data-ply="4">Bc4</b><b data-ply="5">Bc5</b></li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="tile tile--clock spot">
+          <p class="tile__head mono"><span>Based in</span><span>IST · UTC+5:30</span></p>
+          <p class="clock" id="clock">--:--</p>
+          <p class="tile__foot">Bangalore, India</p>
+        </article>
+
+        <article class="tile tile--now spot">
+          <p class="tile__head mono"><span>Right now</span></p>
+          <ul class="now">
+            <li><span class="now__dot"></span>3rd year at PES University</li>
+            <li><span class="now__dot now__dot--amber"></span>Building NammaTickets</li>
+            <li><span class="now__dot now__dot--green"></span>Looking for 2027 internships</li>
+          </ul>
+        </article>
+
+        <article class="tile tile--activity spot">
+          <p class="tile__head mono"><span><b id="activity-total">447</b> commits · last 12 months</span><span>GitHub + Bitbucket</span></p>
+          <div class="activity__scroll">
+            <div class="heatmap-wrap">
+              <div class="heatmap__months mono" id="heatmap-months" aria-hidden="true"></div>
+              <div class="heatmap" id="heatmap" role="img" aria-label="Commit activity heatmap for the last 12 months"></div>
             </div>
           </div>
-
-          <figure class="board-wrap" aria-label="A chessboard playing the first moves of the Italian Game">
-            <div class="board-card" id="board-card">
-              <div class="board-card__glare" aria-hidden="true"></div>
-              <div class="board-card__head mono">
-                <span>Italian Game</span>
-                <span class="live"><span class="dot" aria-hidden="true"></span>live</span>
-              </div>
-              <div class="board" id="board">
-                <div class="board__hl" id="hl-from"></div>
-                <div class="board__hl" id="hl-to"></div>
-              </div>
-              <ol class="moves mono" aria-hidden="true">
-                <li><span>1.</span><b data-ply="0">e4</b><b data-ply="1">e5</b></li>
-                <li><span>2.</span><b data-ply="2">Nf3</b><b data-ply="3">Nc6</b></li>
-                <li><span>3.</span><b data-ply="4">Bc4</b><b data-ply="5">Bc5</b></li>
-              </ol>
-            </div>
-            <figcaption class="mono">Chess is how I ended up building for CircleChess.</figcaption>
-          </figure>
-        </div>
+          <div class="tooltip mono" id="tooltip" role="status" aria-live="polite"></div>
+        </article>
+        <script type="application/json" id="activity-data">{"start":"2025-11-23","counts":[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,23,25,4,0,6,0,0,7,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,1,6,4,0,0,0,0,1,0,0,3,7,7,0,0,1,0,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,2,0,0,2,31,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,3,1,1,3,4,12,2,0,0,0,0,0,2,0,0,26,21,0,0,0,3,3,19,4,5,0,0,2,3,1,2,3,0,0,0,6,3,6,0,0,0,1,0,7,0,20,20,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,11,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,9,0,0,2,31,6,0,15,0,0,2,0,0,0,0,0,0,1,0,0,0,0,0,0,8,0,0,0,0,0,0,0,2]}</script>
       </div>
     </section>
 
-    <!-- ============ MARQUEE ============ -->
-    <div class="marquee" aria-label="Tech I use">
+    <!-- ================= STACK MARQUEE ================= -->
+    <div class="marquee" aria-label="Technologies I use">
       <div class="marquee__track">
         <ul class="marquee__list">
-          <li>Python</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>React Native</li><li>Django</li><li>FastAPI</li><li>Flask</li><li>PostgreSQL</li><li>MySQL</li><li>Redis</li><li>AWS</li><li>Docker</li><li>Pulumi</li><li>GitHub Actions</li><li>C</li>
+          <li><i class="ico" style="--icon:url(/icons/python.svg)"></i>Python</li>
+          <li><i class="ico" style="--icon:url(/icons/typescript.svg)"></i>TypeScript</li>
+          <li><i class="ico" style="--icon:url(/icons/react.svg)"></i>React</li>
+          <li><i class="ico" style="--icon:url(/icons/nextdotjs.svg)"></i>Next.js</li>
+          <li><i class="ico" style="--icon:url(/icons/django.svg)"></i>Django</li>
+          <li><i class="ico" style="--icon:url(/icons/fastapi.svg)"></i>FastAPI</li>
+          <li><i class="ico" style="--icon:url(/icons/postgresql.svg)"></i>PostgreSQL</li>
+          <li><i class="ico" style="--icon:url(/icons/redis.svg)"></i>Redis</li>
+          <li><i class="ico" style="--icon:url(/icons/cloud.svg)"></i>AWS</li>
+          <li><i class="ico" style="--icon:url(/icons/docker.svg)"></i>Docker</li>
+          <li><i class="ico" style="--icon:url(/icons/kubernetes.svg)"></i>Kubernetes</li>
+          <li><i class="ico" style="--icon:url(/icons/pulumi.svg)"></i>Pulumi</li>
+          <li><i class="ico" style="--icon:url(/icons/githubactions.svg)"></i>GitHub Actions</li>
+          <li><i class="ico" style="--icon:url(/icons/tailwindcss.svg)"></i>Tailwind CSS</li>
         </ul>
         <ul class="marquee__list" aria-hidden="true">
-          <li>Python</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>React Native</li><li>Django</li><li>FastAPI</li><li>Flask</li><li>PostgreSQL</li><li>MySQL</li><li>Redis</li><li>AWS</li><li>Docker</li><li>Pulumi</li><li>GitHub Actions</li><li>C</li>
+          <li><i class="ico" style="--icon:url(/icons/python.svg)"></i>Python</li>
+          <li><i class="ico" style="--icon:url(/icons/typescript.svg)"></i>TypeScript</li>
+          <li><i class="ico" style="--icon:url(/icons/react.svg)"></i>React</li>
+          <li><i class="ico" style="--icon:url(/icons/nextdotjs.svg)"></i>Next.js</li>
+          <li><i class="ico" style="--icon:url(/icons/django.svg)"></i>Django</li>
+          <li><i class="ico" style="--icon:url(/icons/fastapi.svg)"></i>FastAPI</li>
+          <li><i class="ico" style="--icon:url(/icons/postgresql.svg)"></i>PostgreSQL</li>
+          <li><i class="ico" style="--icon:url(/icons/redis.svg)"></i>Redis</li>
+          <li><i class="ico" style="--icon:url(/icons/cloud.svg)"></i>AWS</li>
+          <li><i class="ico" style="--icon:url(/icons/docker.svg)"></i>Docker</li>
+          <li><i class="ico" style="--icon:url(/icons/kubernetes.svg)"></i>Kubernetes</li>
+          <li><i class="ico" style="--icon:url(/icons/pulumi.svg)"></i>Pulumi</li>
+          <li><i class="ico" style="--icon:url(/icons/githubactions.svg)"></i>GitHub Actions</li>
+          <li><i class="ico" style="--icon:url(/icons/tailwindcss.svg)"></i>Tailwind CSS</li>
         </ul>
       </div>
     </div>
 
-    <!-- ============ EXPERIENCE ============ -->
+    <!-- ================= EXPERIENCE ================= -->
     <section class="section wrap" id="work" aria-labelledby="work-title">
       <header class="section__head reveal">
         <p class="kicker mono" data-scramble>01 / Experience</p>
-        <h2 id="work-title">Where I've <em>shipped</em></h2>
+        <h2 id="work-title">Where I've <em>worked</em></h2>
       </header>
 
-      <ol class="jobs">
-        <li class="job spot reveal">
-          <div class="job__meta mono">
-            <span>Jun – Aug 2026</span>
-            <span class="muted">Bangalore</span>
-            <span class="tag">4 repos</span>
-          </div>
-          <div class="job__body">
-            <h3>CircleChess <span class="job__role">Web Dev Intern</span></h3>
-            <p class="job__lede">An online chess school. I owned the Study workspace and the coach workbooks loop, from the app down to the infrastructure.</p>
+      <ol class="timeline">
+        <li class="timeline__fill" aria-hidden="true"></li>
+
+        <li class="tl reveal">
+          <div class="tl__rail" aria-hidden="true"><span class="tl__dot"></span></div>
+          <p class="tl__date mono">Jun – Aug 2026</p>
+          <div class="tl__card spot">
+            <header class="tl__head">
+              <span class="logo logo--cc" aria-hidden="true">♞&#xFE0E;</span>
+              <div>
+                <h3>CircleChess</h3>
+                <p class="tl__role">Web Dev Intern · Bangalore</p>
+              </div>
+            </header>
             <ul class="ticks">
-              <li>Rebuilt Study (lessons, practice vs Stockfish, analysis) and built coach assignments, attempt replay and pass-rate analytics across React Native Web, Django and PostgreSQL.</li>
-              <li>Self-hosted Lichess's opening explorer and tablebase on AWS ECS with Pulumi and Bitbucket Pipelines.</li>
+              <li>Rebuilt the <strong>Study workspace</strong>, an interactive chess study tool with lesson, practice-vs-Stockfish and analysis modes, across the React Native Web app, Django REST backend and PostgreSQL schema.</li>
+              <li>Built <strong>coach workbooks</strong> end to end: assignment APIs, attempt replay, pass-rate analytics and a coach dashboard.</li>
+              <li>Self-hosted Lichess's <strong>opening explorer and tablebase</strong> on AWS ECS with Pulumi and Bitbucket Pipelines, serving opening statistics and endgame lookups inside the app.</li>
             </ul>
-            <ul class="chips"><li>React Native Web</li><li>TypeScript</li><li>Django</li><li>PostgreSQL</li><li>AWS</li><li>Pulumi</li></ul>
+            <ul class="chips"><li>React Native Web</li><li>TypeScript</li><li>Django</li><li>PostgreSQL</li><li>AWS ECS</li><li>Pulumi</li></ul>
           </div>
         </li>
 
-        <li class="job spot reveal">
-          <div class="job__meta mono">
-            <span>Feb – Mar 2026</span>
-            <span class="muted">PES University</span>
-          </div>
-          <div class="job__body">
-            <h3>Aatmatrisha '26 <span class="job__role">Web Developer, Tech Team</span></h3>
-            <p class="job__lede">The ticketing platform for PES University's annual fest, built by a 12-person student team.</p>
+        <li class="tl reveal">
+          <div class="tl__rail" aria-hidden="true"><span class="tl__dot"></span></div>
+          <p class="tl__date mono">Feb – Mar 2026</p>
+          <div class="tl__card spot">
+            <header class="tl__head">
+              <span class="logo logo--at" aria-hidden="true">AT</span>
+              <div>
+                <h3>Aatmatrisha '26</h3>
+                <p class="tl__role">Web Dev, Tech Team · PES University Fest</p>
+              </div>
+            </header>
             <ul class="ticks">
-              <li>Built the full frontend: landing page, events, passes, cart, checkout, My Tickets, team and admin pages.</li>
+              <li>Built the <strong>full frontend</strong> of the fest's ticketing platform: landing page, events, passes, cart, checkout, My Tickets, team and admin pages.</li>
+              <li>Added order cancellation, admin order verification and a global ordering switch across the cart, checkout and admin APIs.</li>
             </ul>
-            <ul class="chips"><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Tailwind</li></ul>
+            <ul class="chips"><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Tailwind CSS</li></ul>
           </div>
         </li>
 
-        <li class="job spot reveal">
-          <div class="job__meta mono">
-            <span>Feb – May 2025</span>
-            <span class="muted">Bangalore</span>
-          </div>
-          <div class="job__body">
-            <h3>Liquid Neurons <span class="job__role">Web Dev Intern</span></h3>
-            <p class="job__lede">A school ERP used by several institutes.</p>
+        <li class="tl reveal">
+          <div class="tl__rail" aria-hidden="true"><span class="tl__dot"></span></div>
+          <p class="tl__date mono">Feb – May 2025</p>
+          <div class="tl__card spot">
+            <header class="tl__head">
+              <span class="logo logo--ln" aria-hidden="true">LN</span>
+              <div>
+                <h3>Liquid Neurons</h3>
+                <p class="tl__role">Web Dev Intern · Bangalore</p>
+              </div>
+            </header>
             <ul class="ticks">
-              <li>Developed the fee-receipt and employee-onboarding modules: React forms over Flask REST endpoints and MySQL.</li>
+              <li>Developed the <strong>fee-receipt</strong> and <strong>employee-onboarding</strong> modules of a multi-institute school ERP in a 5-person team: React forms backed by Flask REST endpoints and MySQL queries.</li>
             </ul>
             <ul class="chips"><li>React</li><li>Flask</li><li>MySQL</li></ul>
           </div>
@@ -196,80 +264,102 @@
       </ol>
     </section>
 
-    <!-- ============ PROJECTS ============ -->
+    <!-- ================= PROJECTS (stacking cards) ================= -->
     <section class="section wrap" id="projects" aria-labelledby="projects-title">
       <header class="section__head reveal">
         <p class="kicker mono" data-scramble>02 / Projects</p>
         <h2 id="projects-title">Things I've <em>built</em></h2>
       </header>
 
-      <div class="bento">
-        <article class="card card--wide spot reveal" data-anim="bars">
-          <div class="card__text">
-            <p class="card__tag mono">Research · team of 3 · 2026</p>
-            <h3>Legal RAG</h3>
-            <p>Which way of splitting and searching India's new criminal codes finds the right law? We benchmarked 20 chunkers × 7 retrievers; hybrid BM25 + BGE-M3 found the right section 81.1% of the time.</p>
-            <ul class="stats mono"><li><b>140</b> setups tested</li><li><b>81.1%</b> hit rate</li><li><b>IEEE</b> paper</li></ul>
+      <div class="stack">
+        <article class="proj spot" style="--i:0" data-anim="bars">
+          <div class="proj__text">
+            <p class="proj__tag mono"><span>01</span>Research · team of 3 · 2026</p>
+            <h3>Legal RAG on India's new criminal codes</h3>
+            <p>Benchmarked 20 chunking strategies × 7 retrievers on the BNS, BNSS and BSA. Hybrid BM25 + BGE-M3 retrieval found the right section for 81.1% of questions, and lifted a local Qwen3-4B's citation F1 from 5.7% to 58.6%. Written up as an IEEE-format paper.</p>
+            <ul class="stats mono"><li><b>140</b>setups tested</li><li><b>81.1%</b>hit rate</li><li><b>10×</b>citation F1</li></ul>
             <ul class="chips"><li>Python</li><li>BM25</li><li>BGE-M3</li><li>FAISS</li><li>Qwen3</li></ul>
-            <p class="card__links"><a href="https://github.com/ASHWINANAND19/legal-rag-chunking" target="_blank" rel="noopener">Code ↗</a></p>
+            <p class="proj__links"><a href="https://github.com/ASHWINANAND19/legal-rag-chunking" target="_blank" rel="noopener">View code ↗</a></p>
           </div>
-          <div class="card__visual" aria-hidden="true">
+          <div class="proj__visual" aria-hidden="true">
             <div class="bars">
+              <p class="mono bars__note">section-citation F1 · Qwen3-4B</p>
               <div class="bars__row"><span class="mono">no RAG</span><span class="bar"><i style="--w:5.7%"></i></span><span class="mono">5.7%</span></div>
               <div class="bars__row"><span class="mono">with RAG</span><span class="bar bar--on"><i style="--w:58.6%"></i></span><span class="mono">58.6%</span></div>
-              <p class="mono bars__note">citation F1 · Qwen3-4B</p>
             </div>
           </div>
         </article>
 
-        <article class="card spot reveal">
-          <p class="card__tag mono">Personal project · in progress</p>
-          <h3>NammaTickets</h3>
-          <p>A safer way to resell event tickets in Bangalore, built on my own.</p>
-          <div class="ticket" aria-hidden="true">
-            <div class="ticket__main">
-              <span>Admit one · resale</span>
-              <b>NammaTickets</b>
-              <span class="ticket__status"><i class="dot dot--ink"></i>Building</span>
+        <article class="proj spot" style="--i:1" data-anim="pipe">
+          <div class="proj__text">
+            <p class="proj__tag mono"><span>02</span>AI agents · team of 4 · 2026</p>
+            <h3>ReqTrace</h3>
+            <p>An agentic assistant that turns raw requirements into an IEEE 830 SRS, test cases, UML and a traceability matrix. As Scrum Master, I built the UML and test-case agents and ran the security and performance tests.</p>
+            <ul class="chips"><li>FastAPI</li><li>React</li><li>PostgreSQL</li><li>Gemini</li><li>Docker</li></ul>
+            <p class="proj__links"><a href="https://github.com/ASHWINANAND19/reqtrace" target="_blank" rel="noopener">View code ↗</a></p>
+          </div>
+          <div class="proj__visual" aria-hidden="true">
+            <div class="pipe mono">
+              <span data-step="0">requirements</span><i></i><span data-step="1">SRS</span><i></i><span data-step="2">test cases</span><i></i><span data-step="3">UML</span><i></i><span data-step="4">trace matrix</span>
             </div>
-            <div class="ticket__stub mono"><span>No. 001</span></div>
           </div>
-          <ul class="chips"><li>Next.js</li><li>PostgreSQL</li><li>Prisma</li></ul>
         </article>
 
-        <article class="card spot reveal" data-anim="score">
-          <p class="card__tag mono">Full stack · 2025</p>
-          <h3>Live Scoreboard</h3>
-          <p>Fixtures, leaderboards and a WebSocket scoreboard for five sports.</p>
-          <div class="score" aria-hidden="true">
-            <div class="score__team"><span class="mono">HOME</span><b data-score="home">21</b></div>
-            <div class="score__mid mono"><span class="dot dot--red"></span><span data-score="clock">Q4 02:14</span></div>
-            <div class="score__team"><span class="mono">AWAY</span><b data-score="away">18</b></div>
+        <article class="proj spot" style="--i:2" data-anim="term">
+          <div class="proj__text">
+            <p class="proj__tag mono"><span>03</span>Systems · C · 2026</p>
+            <h3>PES-VCS</h3>
+            <p>A Git-style version control system in C: a SHA-256 content-addressed object store with crash-safe writes, a staging index, tree objects and commit history.</p>
+            <ul class="chips"><li>C</li><li>OpenSSL</li><li>Make</li></ul>
+            <p class="proj__links"><a href="https://github.com/ASHWINANAND19/PES1UG24AM057-pes-vcs" target="_blank" rel="noopener">View code ↗</a></p>
           </div>
-          <p class="card__links">
-            <a href="https://basketball-scoring-app.vercel.app" target="_blank" rel="noopener">Live ↗</a>
-            <a href="https://github.com/ASHWINANAND19/BASKETBALL_SCORING_APP" target="_blank" rel="noopener">Code ↗</a>
-          </p>
-        </article>
-
-        <article class="card spot reveal" data-anim="pipe">
-          <p class="card__tag mono">AI agents · team of 4</p>
-          <h3>ReqTrace</h3>
-          <p>Turns raw requirements into an IEEE 830 SRS, test cases, UML and a traceability matrix.</p>
-          <div class="pipe mono" aria-hidden="true">
-            <span data-step="0">reqs</span><i></i><span data-step="1">SRS</span><i></i><span data-step="2">tests</span><i></i><span data-step="3">trace</span>
-          </div>
-          <p class="card__links"><a href="https://github.com/ASHWINANAND19/reqtrace" target="_blank" rel="noopener">Code ↗</a></p>
-        </article>
-
-        <article class="card spot reveal" data-anim="term">
-          <p class="card__tag mono">Systems · C</p>
-          <h3>PES-VCS</h3>
-          <p>A Git-style version control system in C, with SHA-256 objects and crash-safe writes.</p>
-          <pre class="term mono" aria-hidden="true"><span class="term__line" data-line="$ ./pes add src/"></span>
+          <div class="proj__visual" aria-hidden="true">
+            <pre class="term mono"><span class="term__bar"><i></i><i></i><i></i></span><span class="term__line" data-line="$ ./pes add src/"></span>
 <span class="term__line" data-line='$ ./pes commit -m "init"'></span>
-<span class="term__line term__line--out" data-line="[main 9f2c41e] init"></span><span class="caret"></span></pre>
-          <p class="card__links"><a href="https://github.com/ASHWINANAND19/PES1UG24AM057-pes-vcs" target="_blank" rel="noopener">Code ↗</a></p>
+<span class="term__line term__line--out" data-line="[main 9f2c41e] init"></span>
+<span class="term__line" data-line="$ ./pes log --oneline"></span>
+<span class="term__line term__line--out" data-line="9f2c41e init"></span><span class="caret"></span></pre>
+          </div>
+        </article>
+
+        <article class="proj spot" style="--i:3" data-anim="score">
+          <div class="proj__text">
+            <p class="proj__tag mono"><span>04</span>Full stack · 2025</p>
+            <h3>Live Sports Scoreboard</h3>
+            <p>A 5-sport tournament app with fixtures, leaderboards, WebSocket live scores and a 40-endpoint FastAPI backend. It started with 3v3 basketball.</p>
+            <ul class="chips"><li>React</li><li>FastAPI</li><li>MySQL</li><li>WebSockets</li></ul>
+            <p class="proj__links">
+              <a href="https://basketball-scoring-app.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+              <a href="https://github.com/ASHWINANAND19/BASKETBALL_SCORING_APP" target="_blank" rel="noopener">View code ↗</a>
+            </p>
+          </div>
+          <div class="proj__visual" aria-hidden="true">
+            <div class="score">
+              <div class="score__team"><span class="mono">HOME</span><b data-score="home">21</b></div>
+              <div class="score__mid mono"><span class="dot dot--red"></span><span data-score="clock">Q4 02:14</span></div>
+              <div class="score__team"><span class="mono">AWAY</span><b data-score="away">18</b></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj spot" style="--i:4">
+          <div class="proj__text">
+            <p class="proj__tag mono"><span>05</span>Personal project · in progress</p>
+            <h3>NammaTickets</h3>
+            <p>A peer-to-peer ticket resale marketplace for Bangalore with verified users, real-time chat and dispute handling.</p>
+            <ul class="chips"><li>Next.js</li><li>TypeScript</li><li>PostgreSQL</li><li>Prisma</li></ul>
+            <p class="proj__links"><span class="muted">Private repo · happy to walk through it</span></p>
+          </div>
+          <div class="proj__visual" aria-hidden="true">
+            <div class="ticket">
+              <div class="ticket__main">
+                <span>Admit one · resale</span>
+                <b>NammaTickets</b>
+                <span class="ticket__status"><i class="dot dot--ink"></i>Building</span>
+              </div>
+              <div class="ticket__stub mono"><span>No. 001</span></div>
+            </div>
+          </div>
         </article>
       </div>
 
@@ -282,93 +372,124 @@
       </div>
     </section>
 
-    <!-- ============ NUMBERS ============ -->
-    <section class="section wrap" id="numbers" aria-labelledby="numbers-title">
-      <header class="section__head reveal">
-        <p class="kicker mono" data-scramble>03 / Numbers</p>
-        <h2 id="numbers-title">By the <em>numbers</em></h2>
-      </header>
-
-      <div class="tiles">
-        <div class="tile spot reveal">
-          <p class="tile__value" data-count="4">4</p>
-          <p class="tile__label">repos I shipped to at CircleChess: app, API, database schema and infrastructure</p>
-        </div>
-        <div class="tile spot reveal">
-          <p class="tile__value" data-count="140">140</p>
-          <p class="tile__label">retrieval setups benchmarked in my Legal RAG study</p>
-        </div>
-        <div class="tile spot reveal">
-          <p class="tile__value" data-count="58.6" data-from="5.7" data-decimals="1" data-suffix="%">58.6%</p>
-          <p class="tile__label">citation F1 once retrieval was added, up from 5.7%</p>
-        </div>
-        <div class="tile spot reveal">
-          <p class="tile__value" data-count="40">40</p>
-          <p class="tile__label">API endpoints behind my live sports scoreboard</p>
-        </div>
-      </div>
-
-      <div class="activity spot reveal">
-        <div class="activity__head">
-          <p><b id="activity-total">447</b> commits in the last 12 months</p>
-          <p class="mono muted">GitHub + Bitbucket</p>
-        </div>
-        <div class="activity__scroll">
-          <div class="heatmap-wrap">
-            <div class="heatmap__months mono" id="heatmap-months" aria-hidden="true"></div>
-            <div class="heatmap" id="heatmap" role="img" aria-label="Commit activity heatmap for the last 12 months"></div>
-          </div>
-        </div>
-        <div class="activity__legend mono muted" aria-hidden="true">
-          <span>less</span><i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><span>more</span>
-        </div>
-        <div class="tooltip mono" id="tooltip" role="status" aria-live="polite"></div>
-      </div>
-      <script type="application/json" id="activity-data">{"start":"2025-11-23","counts":[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,23,25,4,0,6,0,0,7,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,1,6,4,0,0,0,0,1,0,0,3,7,7,0,0,1,0,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,2,0,0,2,31,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,3,1,1,3,4,12,2,0,0,0,0,0,2,0,0,26,21,0,0,0,3,3,19,4,5,0,0,2,3,1,2,3,0,0,0,6,3,6,0,0,0,1,0,7,0,20,20,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,11,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,9,0,0,2,31,6,0,15,0,0,2,0,0,0,0,0,0,1,0,0,0,0,0,0,8,0,0,0,0,0,0,0,2]}</script>
-    </section>
-
-    <!-- ============ SKILLS ============ -->
+    <!-- ================= SKILLS ================= -->
     <section class="section wrap" id="skills" aria-labelledby="skills-title">
       <header class="section__head reveal">
-        <p class="kicker mono" data-scramble>04 / Toolkit</p>
+        <p class="kicker mono" data-scramble>03 / Skills</p>
         <h2 id="skills-title">What I <em>work with</em></h2>
       </header>
-      <div class="toolkit">
-        <dl class="skills reveal">
-          <div><dt class="mono">Languages</dt><dd><ul class="chips"><li>Python</li><li>SQL</li><li>TypeScript</li><li>JavaScript</li><li>C</li></ul></dd></div>
-          <div><dt class="mono">Web &amp; backend</dt><dd><ul class="chips"><li>React</li><li>React Native</li><li>Next.js</li><li>Tailwind</li><li>Django</li><li>FastAPI</li><li>Flask</li><li>Node.js</li><li>REST</li><li>WebSockets</li></ul></dd></div>
-          <div><dt class="mono">Databases</dt><dd><ul class="chips"><li>PostgreSQL</li><li>MySQL</li><li>Redis</li></ul></dd></div>
-          <div><dt class="mono">DevOps &amp; cloud</dt><dd><ul class="chips"><li>AWS (ECS Fargate, S3)</li><li>Docker</li><li>Kubernetes</li><li>Pulumi</li><li>GitHub Actions</li><li>Bitbucket Pipelines</li><li>Vercel</li><li>Git</li></ul></dd></div>
-        </dl>
-        <aside class="edu reveal" aria-label="Education">
-          <p class="mono edu__kicker">Education</p>
-          <p class="edu__school">PES University</p>
-          <p class="edu__degree">B.Tech, CSE (AI &amp; ML)<br>2024 – 2028</p>
-          <p class="edu__gpa"><b>8.3</b><span class="mono">CGPA</span></p>
-        </aside>
+      <div class="skills">
+        <div class="sk spot reveal">
+          <h3 class="mono">Languages</h3>
+          <ul class="tech">
+            <li><i class="ico" style="--icon:url(/icons/python.svg)"></i>Python</li>
+            <li><i class="ico" style="--icon:url(/icons/database.svg)"></i>SQL</li>
+            <li><i class="ico" style="--icon:url(/icons/typescript.svg)"></i>TypeScript</li>
+            <li><i class="ico" style="--icon:url(/icons/javascript.svg)"></i>JavaScript</li>
+            <li><i class="ico" style="--icon:url(/icons/c.svg)"></i>C</li>
+          </ul>
+        </div>
+        <div class="sk spot reveal">
+          <h3 class="mono">Web &amp; backend</h3>
+          <ul class="tech">
+            <li><i class="ico" style="--icon:url(/icons/react.svg)"></i>React</li>
+            <li><i class="ico" style="--icon:url(/icons/react.svg)"></i>React Native</li>
+            <li><i class="ico" style="--icon:url(/icons/nextdotjs.svg)"></i>Next.js</li>
+            <li><i class="ico" style="--icon:url(/icons/tailwindcss.svg)"></i>Tailwind CSS</li>
+            <li><i class="ico" style="--icon:url(/icons/django.svg)"></i>Django</li>
+            <li><i class="ico" style="--icon:url(/icons/fastapi.svg)"></i>FastAPI</li>
+            <li><i class="ico" style="--icon:url(/icons/flask.svg)"></i>Flask</li>
+            <li><i class="ico" style="--icon:url(/icons/nodedotjs.svg)"></i>Node.js</li>
+            <li><i class="ico" style="--icon:url(/icons/api.svg)"></i>REST</li>
+            <li><i class="ico" style="--icon:url(/icons/bolt.svg)"></i>WebSockets</li>
+          </ul>
+        </div>
+        <div class="sk spot reveal">
+          <h3 class="mono">Databases</h3>
+          <ul class="tech">
+            <li><i class="ico" style="--icon:url(/icons/postgresql.svg)"></i>PostgreSQL</li>
+            <li><i class="ico" style="--icon:url(/icons/mysql.svg)"></i>MySQL</li>
+            <li><i class="ico" style="--icon:url(/icons/redis.svg)"></i>Redis</li>
+          </ul>
+        </div>
+        <div class="sk spot reveal">
+          <h3 class="mono">DevOps &amp; cloud</h3>
+          <ul class="tech">
+            <li><i class="ico" style="--icon:url(/icons/cloud.svg)"></i>AWS (ECS Fargate, S3)</li>
+            <li><i class="ico" style="--icon:url(/icons/docker.svg)"></i>Docker</li>
+            <li><i class="ico" style="--icon:url(/icons/kubernetes.svg)"></i>Kubernetes</li>
+            <li><i class="ico" style="--icon:url(/icons/pulumi.svg)"></i>Pulumi</li>
+            <li><i class="ico" style="--icon:url(/icons/githubactions.svg)"></i>GitHub Actions</li>
+            <li><i class="ico" style="--icon:url(/icons/bitbucket.svg)"></i>Bitbucket Pipelines</li>
+            <li><i class="ico" style="--icon:url(/icons/vercel.svg)"></i>Vercel</li>
+            <li><i class="ico" style="--icon:url(/icons/git.svg)"></i>Git</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- ============ CONTACT ============ -->
+    <!-- ================= ABOUT ================= -->
+    <section class="section wrap" id="about" aria-labelledby="about-title">
+      <header class="section__head reveal">
+        <p class="kicker mono" data-scramble>04 / About</p>
+        <h2 id="about-title">A bit <em>more</em></h2>
+      </header>
+      <div class="about">
+        <article class="tile about__me spot reveal">
+          <p class="tile__head mono"><span>About me</span></p>
+          <p class="about__text">I'm a third-year Computer Science (AI &amp; ML) student at PES University in Bangalore. I like owning a feature from the database schema to the last pixel, and I learn fastest by shipping things real people use: a chess school's study tools, a university fest's ticketing, and a school ERP.</p>
+        </article>
+
+        <article class="tile about__edu reveal">
+          <p class="tile__head mono"><span>Education</span><span>2024 – 2028</span></p>
+          <p class="about__school">PES University</p>
+          <p class="about__degree">B.Tech, Computer Science and Engineering (AI &amp; ML)</p>
+          <p class="about__gpa"><b data-count="8.3" data-decimals="1">8.3</b><span class="mono">CGPA / 10</span></p>
+          <ul class="chips chips--onink"><li>DSA</li><li>DBMS</li><li>Operating Systems</li><li>Software Engineering</li><li>Machine Learning</li></ul>
+        </article>
+
+        <article class="tile about__off spot reveal">
+          <p class="tile__head mono"><span>Off the keyboard</span></p>
+          <div class="hobbies">
+            <div class="hobby"><span class="hobby__icon" aria-hidden="true">♞&#xFE0E;</span><p><b>Chess</b><span>How I ended up building for CircleChess.</span></p></div>
+            <div class="hobby"><span class="hobby__icon hobby__icon--ball" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18M5.6 5.6c3.5 3.2 3.5 9.6 0 12.8M18.4 5.6c-3.5 3.2-3.5 9.6 0 12.8"/></svg></span><p><b>Basketball</b><span>Where my scoreboard app started.</span></p></div>
+          </div>
+        </article>
+
+        <article class="tile about__cert spot reveal">
+          <p class="tile__head mono"><span>Certification</span></p>
+          <p class="cert"><i class="ico" style="--icon:url(/icons/python.svg)"></i><span><b>Python (Basic)</b><span class="muted">HackerRank</span></span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
     <section class="contact wrap" id="contact" aria-labelledby="contact-title">
-      <div class="reveal">
-        <p class="kicker mono" data-scramble>05 / Contact</p>
-        <h2 id="contact-title" class="contact__title">Let's build <em>something.</em></h2>
-        <div class="cta cta--big">
-          <a class="btn btn--primary btn--big magnetic" href="mailto:ashwin.a.anand@gmail.com">ashwin.a.anand@gmail.com</a>
-          <a class="btn btn--big magnetic" href="https://github.com/ASHWINANAND19" target="_blank" rel="noopener">GitHub ↗</a>
-          <a class="btn btn--big magnetic" href="Ashwin_Anand_Resume.pdf" target="_blank" rel="noopener">Resume ↓</a>
+      <div class="contact__grid">
+        <div class="reveal">
+          <p class="kicker mono" data-scramble>05 / Contact</p>
+          <h2 id="contact-title" class="contact__title">Let's build <em>something.</em></h2>
+          <p class="contact__lede">Internships, projects, or just a chat about chess and code. Email is the fastest way to reach me.</p>
+          <div class="cta">
+            <a class="btn btn--primary btn--big magnetic" href="mailto:ashwin.a.anand@gmail.com">ashwin.a.anand@gmail.com</a>
+            <button class="btn btn--big copy" type="button"><span class="copy__label">Copy email</span></button>
+            <a class="btn btn--big magnetic" href="https://github.com/ASHWINANAND19" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
         </div>
+        <a class="resume-card reveal" href="Ashwin_Anand_Resume.pdf" target="_blank" rel="noopener" aria-label="Open my resume (PDF)">
+          <span class="resume-card__paper"><img src="resume-preview.jpg" alt="Preview of Ashwin Anand's one-page resume" width="720" height="1018" loading="lazy"></span>
+          <span class="resume-card__label"><span><b>Resume</b><span class="mono">1 page · PDF</span></span><span class="resume-card__go">↓</span></span>
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="footer wrap">
     <p>© <span id="year">2026</span> Ashwin Anand</p>
-    <p class="muted">Hand-written HTML, CSS and JS. Press <kbd>⌘</kbd><kbd>K</kbd> to jump anywhere.</p>
+    <p class="muted">Hand-written HTML, CSS and JS · press <kbd>⌘</kbd><kbd>K</kbd> to jump anywhere</p>
   </footer>
 
-  <!-- ============ COMMAND PALETTE ============ -->
+  <!-- ================= COMMAND PALETTE ================= -->
   <dialog class="palette" id="palette" aria-label="Quick menu">
     <div class="palette__box">
       <div class="palette__search">
@@ -379,8 +500,8 @@
       <ul class="palette__list" id="palette-list" role="listbox">
         <li role="option" data-action="goto" data-target="#work">Experience <span class="mono">section</span></li>
         <li role="option" data-action="goto" data-target="#projects">Projects <span class="mono">section</span></li>
-        <li role="option" data-action="goto" data-target="#numbers">Numbers <span class="mono">section</span></li>
-        <li role="option" data-action="goto" data-target="#skills">Toolkit <span class="mono">section</span></li>
+        <li role="option" data-action="goto" data-target="#skills">Skills <span class="mono">section</span></li>
+        <li role="option" data-action="goto" data-target="#about">About <span class="mono">section</span></li>
         <li role="option" data-action="goto" data-target="#contact">Contact <span class="mono">section</span></li>
         <li role="option" data-action="open" data-target="Ashwin_Anand_Resume.pdf">Download resume <span class="mono">pdf</span></li>
         <li role="option" data-action="open" data-target="https://github.com/ASHWINANAND19">Open GitHub <span class="mono">link</span></li>

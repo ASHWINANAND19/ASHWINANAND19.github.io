@@ -8,7 +8,9 @@ Plain HTML, CSS and a little JavaScript. No build step. GitHub Pages serves the 
 |---|---|
 | `index.html` | All the content: experience, projects, skills, contact |
 | `styles.css` | Layout, light and dark themes, responsive rules |
-| `script.js` | Chessboard, ⌘K menu, commit heatmap, count-ups, card animations, theme transition, cursor effects |
+| `script.js` | Chessboard, ⌘K menu, dock, commit heatmap, stacking project cards, theme transition, cursor effects |
+| `icons/` | Technology logos ([Simple Icons](https://simpleicons.org), CC0) plus a few hand-drawn glyphs |
+| `resume-preview.jpg` | Preview image of the resume shown in the contact section |
 | `Ashwin_Anand_Resume.pdf` | Current resume |
 | `og.png`, `favicon.svg` | Link preview image and tab icon |
 
